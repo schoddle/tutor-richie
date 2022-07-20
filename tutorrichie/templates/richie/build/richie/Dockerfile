@@ -7,7 +7,7 @@ RUN apt update \
 
 # Clone repo
 ARG RICHIE_REPOSITORY=https://github.com/openfun/richie.git
-ARG RICHIE_VERSION={{ RICHIE_RELEASE_VERSION }}
+ARG RICHIE_VERSION=master
 RUN git clone $RICHIE_REPOSITORY --branch $RICHIE_VERSION --depth 1 /richie
 
 #--------- Front-end builder image
