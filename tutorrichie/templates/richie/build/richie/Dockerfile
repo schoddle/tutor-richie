@@ -6,7 +6,7 @@ RUN apt update \
     && rm -rf /var/lib/apt/lists/*
 
 # Clone repo
-ARG RICHIE_REPOSITORY=https://github.com/openfun/richie.git
+ARG RICHIE_REPOSITORY=https://github.com/schoddle/richie.git
 ARG RICHIE_VERSION=master
 RUN git clone $RICHIE_REPOSITORY --branch master --depth 1 /richie
 
