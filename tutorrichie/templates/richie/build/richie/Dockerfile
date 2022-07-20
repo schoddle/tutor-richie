@@ -8,7 +8,7 @@ RUN apt update \
 # Clone repo
 ARG RICHIE_REPOSITORY=https://github.com/openfun/richie.git
 ARG RICHIE_VERSION=master
-RUN git clone $RICHIE_REPOSITORY --branch $RICHIE_VERSION --depth 1 /richie
+RUN git clone $RICHIE_REPOSITORY --branch master --depth 1 /richie
 
 #--------- Front-end builder image
 FROM node:14 as frontend-builder
